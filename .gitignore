@@ -7,7 +7,7 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 
-# Dữ liệu người dùng: không commit CSDL
+# Dữ liệu người dùng
 data/*.db
 data/*.db-wal
 data/*.db-shm
@@ -16,15 +16,15 @@ data/*.db-journal
 # Test
 .pytest_cache/
 
-# Đóng gói PyInstaller (sản phẩm build, tạo lại bằng: pyinstaller omnia.spec)
+# Đóng gói PyInstaller 
 build/
 dist/
 *.spec.bak
 
-# Thư mục gom tài liệu/build không nộp (chỉ để tham khảo cục bộ)
+# Thư mục gom tài liệu
 temp/
 
-# IDE (giữ lại cấu hình interpreter của project)
+# IDE 
 .vscode/*
 !.vscode/settings.json
 .idea/
