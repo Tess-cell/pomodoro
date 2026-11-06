@@ -1,0 +1,34 @@
+# Môi trường ảo
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Dữ liệu người dùng: không commit CSDL
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/*.db-journal
+
+# Test
+.pytest_cache/
+
+# Đóng gói PyInstaller (sản phẩm build, tạo lại bằng: pyinstaller omnia.spec)
+build/
+dist/
+*.spec.bak
+
+# Thư mục gom tài liệu/build không nộp (chỉ để tham khảo cục bộ)
+temp/
+
+# IDE (giữ lại cấu hình interpreter của project)
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# Windows
+Thumbs.db
+desktop.ini
