@@ -1,0 +1,37 @@
+# Môi trường ảo
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Dữ liệu người dùng
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/*.db-journal
+
+# Test
+.pytest_cache/
+
+# Đóng gói PyInstaller 
+build/
+dist/
+*.spec.bak
+
+# Thư mục gom tài liệu
+temp/
+
+# Ghi chú làm việc nội bộ
+AGENTS.md
+
+# IDE 
+.vscode/*
+!.vscode/settings.json
+.idea/
+
+# Windows
+Thumbs.db
+desktop.ini

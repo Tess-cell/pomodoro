@@ -1,0 +1,156 @@
+﻿/* style.qss - Theme dark minimal (Linear/Notion) cho Pomodoro Omnia.
+   Nạp một lần trong main.py: app.setStyleSheet(...).
+   Màu/bo góc lấy từ config.py; file này CHỈ khai báo quy tắc hiển thị. */
+
+/* ---------------------------------------------------------------- Nền chung */
+QWidget {
+    font-family: "Segoe UI Variable", "Segoe UI", sans-serif;
+    color: #FFFFFF;
+}
+
+QMainWindow, QDialog, QWidget#centralWidget {
+    background-color: #121418;
+}
+
+/* ------------------------------------------------------------- Nhãn đồng hồ */
+QLabel#cycleLabel {
+    color: #6B7280;
+    font-size: 12px;
+}
+
+QLabel#stateLabel {
+    color: #9AA0AD;
+    font-size: 16px;
+}
+
+QLabel#clockLabel {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+QLabel#currentTaskLabel {
+    color: #9AA0AD;
+    font-size: 13px;
+}
+
+/* Thẻ thú cưng: nền nổi, viền mờ, bo góc */
+QLabel#houseLabel {
+    background-color: #1A1D24;
+    border: 1px solid #262A33;
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ----------------------------------------------------------------- Nút chính */
+QPushButton#primaryButton {
+    background-color: #7C5CFF;
+    color: #FFFFFF;
+    border: 1px solid #7C5CFF;
+    border-radius: 14px;
+    padding: 6px 18px;
+    font-size: 15px;
+    font-weight: 700;
+}
+QPushButton#primaryButton:hover { background-color: #9377FF; border-color: #9377FF; }
+QPushButton#primaryButton:pressed { background-color: #6A4AE6; border-color: #6A4AE6; }
+QPushButton#primaryButton:disabled {
+    background-color: #2A2E37;
+    color: #6B7280;
+    border-color: #2A2E37;
+}
+
+/* ------------------------------------------------------------------ Nút phụ */
+QPushButton#secondaryButton {
+    background-color: #1A1D24;
+    color: #FFFFFF;
+    border: 1px solid #262A33;
+    border-radius: 14px;
+    padding: 6px 18px;
+    font-size: 14px;
+    font-weight: 700;
+}
+QPushButton#secondaryButton:hover { background-color: #22262F; border-color: #333846; }
+QPushButton#secondaryButton:pressed { background-color: #171A20; }
+QPushButton#secondaryButton:disabled { color: #6B7280; border-color: #20242C; }
+
+/* --------------------------------------------------- Nút mở cửa sổ chức năng */
+QPushButton#navButton {
+    background-color: #1A1D24;
+    color: #FFFFFF;
+    border: 1px solid #262A33;
+    border-radius: 14px;
+    padding: 12px 10px;
+    font-size: 14px;
+}
+QPushButton#navButton:hover { background-color: #22262F; border-color: #7C5CFF; }
+QPushButton#navButton:pressed { background-color: #171A20; }
+QPushButton#navButton:disabled { color: #6B7280; border-color: #20242C; }
+
+/* ------------------------------------------------- Nút mặc định trong dialog */
+QDialog QPushButton {
+    background-color: #1A1D24;
+    color: #FFFFFF;
+    border: 1px solid #262A33;
+    border-radius: 10px;
+    padding: 7px 14px;
+    font-size: 13px;
+}
+QDialog QPushButton:hover { background-color: #22262F; border-color: #333846; }
+QDialog QPushButton:pressed { background-color: #171A20; }
+QDialog QPushButton:disabled { color: #6B7280; border-color: #20242C; }
+
+/* ------------------------------------------------------------- Ô nhập / bảng */
+QLineEdit, QSpinBox, QPlainTextEdit, QTableWidget, QListWidget {
+    background-color: #1A1D24;
+    color: #FFFFFF;
+    border: 1px solid #262A33;
+    border-radius: 10px;
+    padding: 6px 8px;
+    selection-background-color: #7C5CFF;
+    selection-color: #FFFFFF;
+}
+QLineEdit:focus, QSpinBox:focus, QPlainTextEdit:focus,
+QTableWidget:focus, QListWidget:focus {
+    border-color: #7C5CFF;
+}
+
+QHeaderView::section {
+    background-color: #1A1D24;
+    color: #9AA0AD;
+    border: none;
+    border-bottom: 1px solid #262A33;
+    padding: 6px;
+}
+QTableWidget::item:selected, QListWidget::item:selected {
+    background-color: #2A2E37;
+    color: #FFFFFF;
+}
+QTableWidget::item:hover, QListWidget::item:hover { background-color: #22262F; }
+
+/* ------------------------------------------------------------ Nhóm / thanh tab */
+QGroupBox {
+    background-color: #1A1D24;
+    border: 1px solid #262A33;
+    border-radius: 12px;
+    margin-top: 12px;
+    padding: 10px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 4px;
+    color: #9AA0AD;
+}
+
+/* Menu, combobox, checkbox cơ bản cho đồng bộ màu */
+QComboBox, QCheckBox, QRadioButton { color: #FFFFFF; }
+QComboBox {
+    background-color: #1A1D24;
+    border: 1px solid #262A33;
+    border-radius: 10px;
+    padding: 5px 8px;
+}
+QStatusBar { background-color: #121418; color: #6B7280; }
